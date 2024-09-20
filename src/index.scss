@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root {
+    --main-color: #FFC107;
+}
+body {
+    background-color: #222;
+}
+
+.container {
+    .title {
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+    }
+}
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px auto;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        color: #fff;
+        font-weight: bold;
+    }
+    input {
+        padding: 10px 12px;
+        border-radius: 4px;
+    }
+    button {
+        padding: 12px 15px;
+        cursor: pointer;
+        background: linear-gradient(45deg, var(--main-color), #FF9800);
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 4px;
+    }
+}
+table {
+    width: 500px;
+    overflow: hidden;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #444;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 10px #000;
+    thead th,
+    tbody td {
+        padding: 10px;
+    }
+    thead{
+        background-color: #123;
+        th {
+
+            font-weight: bold;
+        }
+    }
+    tbody {
+        button {
+            padding: 3px 5px;
+            cursor: pointer;
+            border-radius: 3px;
+            border: none;
+            font-weight: bold;
+        }
+        .edit {
+            background-color: var(--main-color);
+            margin: 4px;
+            color: #000;
+        }
+        .delete {
+            background-color: #f00;
+            color: #fff;
+        }
+    }
+    tbody tr:nth-child(even){
+        background-color: #333;
+    }
+    
+
+}
+@media (max-width: 768px) {
+.container {
+    form {
+        width: 400px;
+    }
+    table {
+        width: 400px;
+    }
+    
+}
+}
